@@ -3,6 +3,13 @@
 ### 課題2 内容
 ルンバ500seriesをROS化する.
 
+###ROSパッケージを追加
+* ルンバのROSパッケージのリポジトリをクローン
+```
+$ubuntu $ cd ~/catkin_ws/src
+$ubuntu $ git clone https://github.com/AutonomyLab/create_autonomy.git
+```
+
 ###　動作方法
 * ルンバのバッテリの確認
 ```
