@@ -3,7 +3,8 @@
 ### 課題2 内容
 ルンバ500seriesをROS化する.
 
-動画: https://youtu.be/vqtoQXvw28A
+* 動画: https://youtu.be/vqtoQXvw28A
+
 ###ROSパッケージを追加
 * ルンバのROSパッケージのリポジトリをクローン
 ```
@@ -18,7 +19,7 @@ $ubuntu roslaunch ca_driver create_2.launch
 ```
 * 別のターミナルを立ち上げ, ルンバに動作指令を送信
 ```
-$ubuntu rostopic pub /cmd_vel geometry_msgs/Twist -r 60 -- '[0, 0, 0]' '[0, 0, 0.5]'
+$ubuntu rostopic pub /cmd_vel geometry_msgs/Twist -r 60 -- '[0, 0, 0]' '[0, 0, 1.0]'
 ```
 
 ### 参考資料
