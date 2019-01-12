@@ -3,6 +3,7 @@
 ### 課題2 内容
 ルンバ500seriesをROS化する.
 
+動画: https://youtu.be/vqtoQXvw28A
 ###ROSパッケージを追加
 * ルンバのROSパッケージのリポジトリをクローン
 ```
