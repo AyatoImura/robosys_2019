@@ -5,14 +5,14 @@
 
 * 動画: https://youtu.be/vqtoQXvw28A
 
-###ROSパッケージを追加
+### ROSパッケージを追加
 * ルンバのROSパッケージのリポジトリをクローン
 ```
 $ubuntu $ cd ~/catkin_ws/src
 $ubuntu $ git clone https://github.com/AutonomyLab/create_autonomy.git
 ```
 
-###　動作方法
+### 動作方法
 * ルンバのバッテリの確認
 ```
 $ubuntu roslaunch ca_driver create_2.launch
@@ -32,10 +32,10 @@ $ubuntu roslaunch ca_driver create_2.launch
 code:140 >> 16小節からなる曲を登録可能
 code:141　>>　登録した曲を別途演奏
 ```
-* ターミナルでmusic.pyを実行
+* ターミナルでmusic_roomba.pyを実行
 ```
-$ubuntu chmod +x music.py
-$ubuntu python music.py
+$ubuntu chmod +x music_roomba.py
+$ubuntu python music_roomba.py
 ```
 ### 参考資料
 https://karaage.hatenadiary.jp/entry/2017/05/12/073000
