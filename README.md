@@ -17,7 +17,7 @@ $ubuntu $ git clone https://github.com/AutonomyLab/create_autonomy.git
 ```
 $ubuntu roslaunch ca_driver create_2.launch
 ```
-* 別のターミナルを立ち上げ, ルンバに動作指令を送信
+* 別のターミナルを立ち上げ, ルンバに回転動作指令を送信
 ```
 $ubuntu rostopic pub /cmd_vel geometry_msgs/Twist -r 60 -- '[0, 0, 0]' '[0, 0, 1.0]'
 ```
