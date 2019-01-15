@@ -24,37 +24,12 @@ def mover():
     rospy.init_node('rb_demo')
     rospy.sleep(1) # waiting for init process is done
     
-    # forward and report
-    twist = Twist() 
-    print "Moving the robot forward."
-    twist.linear.x = 0.1; # move forward at 0.1 m/s  
-    pub.publish(twist)
-    rospy.sleep(1) 
-    stop_and_report()
-    
-    
-    # backward and report
-    print "Moving the robot backward."
-    twist.linear.x = -0.1; # move backward at 0.1 m/s
-    pub.publish(twist)
-    rospy.sleep(1);
-    stop_and_report()
-    
-    # left turn and report
+    # left turn
     print "Turning the robot left."
     twist = Twist();
-    twist.angular.z = 0.5
+    twist.angular.z = 1.0
     pub.publish(twist)
-    rospy.sleep(1);
-    stop_and_report()
     
-    # right turn and report
-    print "Turning the robot right."
-    twist.angular.z = -0.5
-    pub.publish(twist)
-    rospy.sleep(1);
-    stop_and_report()
-
     # exit process
     print "Node exiting."
 
